@@ -1,55 +1,53 @@
-/* index.css */
 body {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f0f0ff;
+    background-color: #efe6ff; /* Changed to match the image background color */
     font-family: Arial, sans-serif;
 }
 
 .container {
     text-align: center;
-    padding: 40px;
+    padding: 30px; /* Increased padding */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     background-color: #fff;
-}
-
-h1 {
-    font-size: 32px;
-    margin-bottom: 30px;
-    color: #333;
+    width: 350px; /* Increased width */
+    border: 1px solid #ccc; /* Added a border to match the image */
 }
 
 .image-container {
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* Adjusted spacing to match the image */
 }
 
 .image-container img {
-    width: 150px;
+    width: 200px; /* Increased size */
     height: auto;
 }
 
 input[type="text"] {
     display: block;
-    margin: 20px auto;
-    padding: 15px;
+    margin: 10px auto; /* Reduced margin */
+    padding: 15px; /* Increased padding */
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 80%;
+    width: 90%; /* Increased width */
     text-align: center;
-    font-size: 18px;
+    font-size: 18px; /* Increased font size */
+    background-color: #f9f9f9; /* Light background color for the input */
 }
 
 button {
-    padding: 15px 30px;
+    padding: 15px 30px; /* Increased padding */
     border: none;
     border-radius: 5px;
     background-color: #d9534f;
     color: white;
-    font-size: 18px;
+    font-size: 18px; /* Increased font size */
     cursor: pointer;
+    width: 90%; /* Full width for the button to match the input */
+    margin-top: 15px; /* Adjusted space above the button */
 }
 
 button:disabled {
@@ -57,11 +55,27 @@ button:disabled {
 }
 
 ul {
-    padding-left: 0; /* Remove the default padding of the unordered list */
+    padding-left: 0;
+    list-style-type: none; /* Remove the default bullet points */
+    margin-top: 15px; /* Reduced space above the list */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center the list items */
 }
 
 ul li {
-    list-style-position: inside; /* Make the bullets inside the list items */
-    padding-left: 0; /* Remove the default padding of the list items */
-    margin-left: -20px; /* Adjust the margin to remove spacing between bullet and text */
+    background-color: #f0f0ff; /* Light background color for the list items */
+    border: 1px solid #ccc; /* Add a border around each list item */
+    border-radius: 5px;
+    padding: 10px 15px; /* Increased padding */
+    margin: 5px; /* Increased space between list items */
+    font-size: 18px; /* Increased font size */
+    color: #333;
+    text-align: center; /* Center the text within each list item */
+    min-width: 80px; /* Increased minimum width */
+    max-width: 180px; /* Increased maximum width */
+    flex: 1 1 auto; /* Allow the list item to grow and shrink */
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflow text */
+    text-overflow: ellipsis; /* Add ellipsis for overflow text */
 }
