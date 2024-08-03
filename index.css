@@ -1,0 +1,67 @@
+/* index.css */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0ff;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+h1 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.image-container {
+    margin-bottom: 30px;
+}
+
+.image-container img {
+    width: 150px;
+    height: auto;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    font-size: 18px;
+}
+
+button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #d9534f;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+ul {
+    padding-left: 0; /* Remove the default padding of the unordered list */
+}
+
+ul li {
+    list-style-position: inside; /* Make the bullets inside the list items */
+    padding-left: 0; /* Remove the default padding of the list items */
+    margin-left: -20px; /* Adjust the margin to remove spacing between bullet and text */
+}
