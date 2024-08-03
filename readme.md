@@ -16,7 +16,6 @@ The **To-Do App** is a simple, yet powerful application designed to help you man
 
 ### Prerequisites
 
-- [Node.js](https://nodejs.org/) (for local development)
 - Firebase account
 
 ### Installation
