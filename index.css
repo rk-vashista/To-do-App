@@ -3,18 +3,20 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #efe6ff; /* Changed to match the image background color */
+    background-color: #121212; /* Dark background color */
     font-family: Arial, sans-serif;
+    margin: 0;
 }
 
 .container {
     text-align: center;
     padding: 30px; /* Increased padding */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-    width: 350px; /* Increased width */
-    border: 1px solid #ccc; /* Added a border to match the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Darker shadow for contrast */
+    background-color: #1e1e1e; /* Darker container background */
+    width: 90%; /* Use percentage width for responsiveness */
+    max-width: 500px; /* Set a maximum width */
+    border: 1px solid #333; /* Dark border to match the background */
 }
 
 .image-container {
@@ -22,36 +24,41 @@ body {
 }
 
 .image-container img {
-    width: 200px; /* Increased size */
+    width: 80%; /* Adjusted size for responsiveness */
+    max-width: 300px; /* Set a maximum width */
     height: auto;
+    border-radius: 5px; /* Slight border radius for the image */
+    border: 2px solid #333; /* Dark border around the image */
 }
 
 input[type="text"] {
     display: block;
     margin: 10px auto; /* Reduced margin */
     padding: 15px; /* Increased padding */
-    border: 1px solid #ccc;
+    border: 1px solid #555; /* Dark border for the input */
     border-radius: 5px;
-    width: 90%; /* Increased width */
+    width: calc(100% - 30px); /* Full width minus padding */
     text-align: center;
     font-size: 18px; /* Increased font size */
-    background-color: #f9f9f9; /* Light background color for the input */
+    background-color: #333; /* Dark background color for the input */
+    color: #eee; /* Light text color for contrast */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
 }
 
 button {
     padding: 15px 30px; /* Increased padding */
     border: none;
     border-radius: 5px;
-    background-color: #d9534f;
-    color: white;
+    background-color: #ff5722; /* Bright accent color */
+    color: #fff;
     font-size: 18px; /* Increased font size */
     cursor: pointer;
-    width: 90%; /* Full width for the button to match the input */
+    width: calc(100% - 30px); /* Full width for the button to match the input */
     margin-top: 15px; /* Adjusted space above the button */
 }
 
 button:disabled {
-    background-color: #ccc;
+    background-color: #666; /* Darker disabled button color */
 }
 
 ul {
@@ -64,18 +71,43 @@ ul {
 }
 
 ul li {
-    background-color: #f0f0ff; /* Light background color for the list items */
-    border: 1px solid #ccc; /* Add a border around each list item */
+    display: inline-block; /* Display list items inline */
+    background-color: #333; /* Dark background color for the list items */
+    border: 1px solid #555; /* Dark border around each list item */
     border-radius: 5px;
     padding: 10px 15px; /* Increased padding */
     margin: 5px; /* Increased space between list items */
     font-size: 18px; /* Increased font size */
-    color: #333;
+    color: #eee; /* Light text color for contrast */
     text-align: center; /* Center the text within each list item */
-    min-width: 80px; /* Increased minimum width */
-    max-width: 180px; /* Increased maximum width */
-    flex: 1 1 auto; /* Allow the list item to grow and shrink */
+    width: auto; /* Adjust width to fit text */
     white-space: nowrap; /* Prevent text from wrapping */
     overflow: hidden; /* Hide overflow text */
     text-overflow: ellipsis; /* Add ellipsis for overflow text */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+ul li:hover {
+    background-color: #ff5722; /* Bright accent color on hover */
+    color: #fff; /* Light text color on hover */
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px; /* Adjust padding for mobile */
+    }
+
+    .image-container img {
+        width: 100%; /* Full width for mobile */
+    }
+
+    input[type="text"], button {
+        width: 100%; /* Full width for mobile */
+    }
+
+    ul li {
+        font-size: 16px; /* Adjust font size for mobile */
+        padding: 8px 10px; /* Adjust padding for mobile */
+    }
 }
